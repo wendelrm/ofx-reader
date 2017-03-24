@@ -220,7 +220,7 @@ begin
     if pos('</', sLine) > 0 then
        Result := copy(sLine, iTemp+1, pos('</', sLine)-iTemp-1)
     else
-       Result := copy(sLine, iTemp+1, iTemp-1);
+       Result := copy(sLine, iTemp+1, Length(sLine));
   end;
 end;
 
